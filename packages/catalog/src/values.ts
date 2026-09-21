@@ -40,7 +40,14 @@ export const completenessStates = [
   "unknown",
 ] as const;
 
-export const conditionStates = ["excellent", "good", "fair", "poor", "critical", "unknown"] as const;
+export const conditionStates = [
+  "excellent",
+  "good",
+  "fair",
+  "poor",
+  "critical",
+  "unknown",
+] as const;
 
 export const acquisitionMethods = [
   "purchase",

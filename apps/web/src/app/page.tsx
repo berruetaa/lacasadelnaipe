@@ -42,8 +42,8 @@ export default function HomePage() {
 
         <aside className="border-l border-[var(--line)] pl-7">
           <p className="text-sm leading-6 text-[var(--muted)]">
-            La colección recién empieza. El sistema no: cada pieza deberá poder explicar qué es,
-            de dónde vino, qué sabemos de ella y con qué certeza lo sabemos.
+            La colección recién empieza. El sistema no: cada pieza deberá poder explicar qué es, de
+            dónde vino, qué sabemos de ella y con qué certeza lo sabemos.
           </p>
         </aside>
       </section>
