@@ -16,13 +16,14 @@ Proyecto en etapa fundacional. La prioridad actual es construir un catálogo aud
 - **Certeza explícita:** hecho, inferencia e hipótesis no se mezclan.
 - **Identificadores permanentes:** los IDs públicos no se reutilizan.
 - **Uruguay primero:** el primer corpus de investigación es el naipe vinculado a Uruguay.
+- **Serverless first:** ningún componente de producción depende de procesos, pools o servidores persistentes administrados por LCDN.
 
 ## Stack
 
 - Next.js 16 / React 19
 - TypeScript estricto
-- PostgreSQL 18
-- Drizzle ORM
+- Neon Serverless Postgres
+- Drizzle ORM sobre Neon HTTP
 - Zod
 - Tailwind CSS 4
 - Biome
@@ -30,26 +31,41 @@ Proyecto en etapa fundacional. La prioridad actual es construir un catálogo aud
 - pnpm workspaces
 - GitHub Actions
 
+## Arquitectura
+
+```text
+Browser
+  ↓
+Next.js (serverless functions / server components)
+  ↓ HTTPS
+Neon Serverless Postgres
+
+Object storage serverless (imágenes, cuando se incorpore)
+```
+
+No hay servidor de aplicación persistente, conexión PostgreSQL TCP mantenida, Docker ni base de datos local obligatoria en runtime.
+
 ## Estructura
 
 ```text
 apps/web/          sitio público y futura administración
 packages/catalog/  dominio, IDs y validación
-packages/db/       esquema PostgreSQL y acceso a datos
+packages/db/       esquema y acceso serverless a datos
 docs/              decisiones de arquitectura y política catalográfica
 .github/            CI y automatización
 ```
 
 ## Desarrollo
 
-Requisitos: Node.js 24 LTS, pnpm 12 y Docker/Podman compatible con Compose.
+Requisitos: Node.js 24 LTS, pnpm 12 y una `DATABASE_URL` de Neon para las tareas que requieren persistencia.
 
 ```bash
 pnpm install
 cp .env.example .env
-docker compose up -d
 pnpm dev
 ```
+
+El dominio y sus tests no requieren una base de datos activa.
 
 ## Calidad
 
