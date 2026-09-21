@@ -17,24 +17,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Detect committed lockfile
+        id: lockfile
+        shell: bash
+        run: |
+          if git ls-files --error-unmatch pnpm-lock.yaml >/dev/null 2>&1; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: pnpm/action-setup@v4
         with:
           version: 12.5.1
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          if [[ "${{ steps.lockfile.outputs.present }}" == "true" ]]; then
+            pnpm install --frozen-lockfile
+          else
+            pnpm install --no-frozen-lockfile
+          fi
+
       - name: Lint and format check
         run: pnpm check
+
       - name: Typecheck
         run: pnpm typecheck
+
       - name: Unit tests
         run: pnpm test
+
       - name: Build
         run: pnpm build
+
       - name: Preserve generated lockfile during bootstrap
-        if: ${{ hashFiles('pnpm-lock.yaml') == '' }}
+        if: ${{ success() && steps.lockfile.outputs.present == 'false' }}
         uses: actions/upload-artifact@v4
         with:
           name: pnpm-lock-bootstrap
