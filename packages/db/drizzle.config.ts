@@ -4,17 +4,20 @@ import { defineConfig } from "drizzle-kit";
 
 config({ path: resolve(process.cwd(), "../../.env") });
 
-const url = process.env.DATABASE_URL;
-
-if (!url) {
-  throw new Error("DATABASE_URL is required. Copy .env.example to .env first.");
-}
+const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+const databaseId = process.env.CLOUDFLARE_D1_DATABASE_ID;
+const token = process.env.CLOUDFLARE_D1_TOKEN;
 
 export default defineConfig({
   schema: "./src/schema.ts",
   out: "./drizzle",
-  dialect: "postgresql",
-  dbCredentials: { url },
+  dialect: "sqlite",
+  ...(accountId && databaseId && token
+    ? {
+        driver: "d1-http" as const,
+        dbCredentials: { accountId, databaseId, token },
+      }
+    : {}),
   strict: true,
   verbose: true,
 });

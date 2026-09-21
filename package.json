@@ -10,13 +10,16 @@
   "scripts": {
     "dev": "pnpm --filter @lacasadelnaipe/web dev",
     "build": "pnpm --filter @lacasadelnaipe/web build",
+    "deploy": "pnpm --filter @lacasadelnaipe/web deploy",
     "check": "biome ci .",
     "check:write": "biome check --write .",
     "typecheck": "pnpm -r --if-present run typecheck",
     "test": "pnpm -r --if-present run test",
     "test:e2e": "playwright test",
+    "cf:typegen": "pnpm --filter @lacasadelnaipe/web cf:typegen",
     "db:generate": "pnpm --filter @lacasadelnaipe/db db:generate",
-    "db:migrate": "pnpm --filter @lacasadelnaipe/db db:migrate",
+    "db:migrate:local": "pnpm --filter @lacasadelnaipe/db db:migrate:local",
+    "db:migrate:remote": "pnpm --filter @lacasadelnaipe/db db:migrate:remote",
     "db:studio": "pnpm --filter @lacasadelnaipe/db db:studio"
   },
   "devDependencies": {

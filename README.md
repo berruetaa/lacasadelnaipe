@@ -16,48 +16,40 @@ Proyecto en etapa fundacional. La prioridad actual es construir un catálogo aud
 - **Certeza explícita:** hecho, inferencia e hipótesis no se mezclan.
 - **Identificadores permanentes:** los IDs públicos no se reutilizan.
 - **Uruguay primero:** el primer corpus de investigación es el naipe vinculado a Uruguay.
-- **Serverless first:** ningún componente de producción depende de procesos, pools o servidores persistentes administrados por LCDN.
+- **Free-tier first:** la arquitectura debe poder operar en el plan gratuito de Cloudflare mientras el proyecto sea pequeño.
 
 ## Stack
 
-- Next.js 16 / React 19
-- TypeScript estricto
-- Neon Serverless Postgres
-- Drizzle ORM sobre Neon HTTP
-- Zod
+- Next.js 16 API surface sobre **vinext/Vite** para Cloudflare Workers
+- React 19 + TypeScript estricto
+- Cloudflare Workers + Static Assets
+- Cloudflare D1 + Drizzle ORM
+- Cloudflare R2 para imágenes y archivos binarios
 - Tailwind CSS 4
 - Biome
 - Vitest + Playwright
 - pnpm workspaces
 - GitHub Actions
 
-## Arquitectura
+## Arquitectura de costo
 
-```text
-Browser
-  ↓
-Next.js (serverless functions / server components)
-  ↓ HTTPS
-Neon Serverless Postgres
+El sitio público es **static-first**. HTML, JS, CSS e imágenes de interfaz deben servirse como Static Assets siempre que sea posible; una visita pública no debería ejecutar un Worker si no necesita datos dinámicos.
 
-Object storage serverless (imágenes, cuando se incorpore)
-```
-
-No hay servidor de aplicación persistente, conexión PostgreSQL TCP mantenida, Docker ni base de datos local obligatoria en runtime.
+D1 se reserva para catálogo estructurado, procedencia, fuentes y administración. R2 almacena originales y derivados de fotografías. No hay PostgreSQL externo, contenedores ni procesos persistentes.
 
 ## Estructura
 
 ```text
-apps/web/          sitio público y futura administración
+apps/web/          sitio público y futura administración en Workers
 packages/catalog/  dominio, IDs y validación
-packages/db/       esquema y acceso serverless a datos
+packages/db/       esquema SQLite/D1 y acceso Drizzle
 docs/              decisiones de arquitectura y política catalográfica
 .github/            CI y automatización
 ```
 
 ## Desarrollo
 
-Requisitos: Node.js 24 LTS, pnpm 12 y una `DATABASE_URL` de Neon para las tareas que requieren persistencia.
+Requisitos: Node.js 24 LTS y pnpm 12.
 
 ```bash
 pnpm install
@@ -65,7 +57,15 @@ cp .env.example .env
 pnpm dev
 ```
 
-El dominio y sus tests no requieren una base de datos activa.
+Para crear los recursos remotos por primera vez:
+
+```bash
+pnpm --filter @lacasadelnaipe/web exec wrangler login
+pnpm --filter @lacasadelnaipe/web exec wrangler d1 create lacasadelnaipe
+pnpm --filter @lacasadelnaipe/web exec wrangler r2 bucket create lacasadelnaipe-media
+```
+
+Luego reemplazá el `database_id` placeholder de `apps/web/wrangler.jsonc`.
 
 ## Calidad
 

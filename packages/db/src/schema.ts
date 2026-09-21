@@ -7,61 +7,60 @@ import {
   sourceKinds,
   suitSystems,
 } from "@lacasadelnaipe/catalog";
-import { sql } from "drizzle-orm";
 import {
   integer,
-  pgEnum,
-  pgTable,
   primaryKey,
+  sqliteTable,
   text,
-  timestamp,
   uniqueIndex,
-  uuid,
-} from "drizzle-orm/pg-core";
-
-export const certaintyEnum = pgEnum("certainty", certaintyLevels);
-export const suitSystemEnum = pgEnum("suit_system", suitSystems);
-export const openingStateEnum = pgEnum("opening_state", openingStates);
-export const completenessEnum = pgEnum("completeness", completenessStates);
-export const conditionEnum = pgEnum("condition", conditionStates);
-export const acquisitionMethodEnum = pgEnum("acquisition_method", acquisitionMethods);
-export const sourceKindEnum = pgEnum("source_kind", sourceKinds);
+} from "drizzle-orm/sqlite-core";
 
 const timestamps = {
-  createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
-  updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow().notNull(),
+  createdAt: integer("created_at", { mode: "timestamp_ms" })
+    .notNull()
+    .$defaultFn(() => new Date()),
+  updatedAt: integer("updated_at", { mode: "timestamp_ms" })
+    .notNull()
+    .$defaultFn(() => new Date())
+    .$onUpdateFn(() => new Date()),
 };
 
-export const catalogReferences = pgTable(
+const id = (name: string) =>
+  text(name)
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID());
+
+export const catalogReferences = sqliteTable(
   "catalog_references",
   {
-    id: uuid("id").primaryKey().default(sql`uuidv7()`),
+    id: id("id"),
     publicId: text("public_id").notNull(),
     slug: text("slug").notNull(),
     title: text("title").notNull(),
     manufacturer: text("manufacturer"),
     originCountry: text("origin_country"),
-    suitSystem: suitSystemEnum("suit_system").notNull().default("unknown"),
+    suitSystem: text("suit_system", { enum: suitSystems }).notNull().default("unknown"),
     pattern: text("pattern"),
     dateLabel: text("date_label"),
     dateStart: integer("date_start"),
     dateEnd: integer("date_end"),
-    certainty: certaintyEnum("certainty").notNull().default("unknown"),
+    certainty: text("certainty", { enum: certaintyLevels }).notNull().default("unknown"),
     ...timestamps,
   },
   (table) => [
     uniqueIndex("catalog_references_public_id_uq").on(table.publicId),
     uniqueIndex("catalog_references_slug_uq").on(table.slug),
+    uniqueIndex("catalog_references_suit_system_slug_uq").on(table.suitSystem, table.slug),
   ],
 );
 
-export const acquisitions = pgTable(
+export const acquisitions = sqliteTable(
   "acquisitions",
   {
-    id: uuid("id").primaryKey().default(sql`uuidv7()`),
+    id: id("id"),
     publicId: text("public_id").notNull(),
-    method: acquisitionMethodEnum("method").notNull().default("unknown"),
-    acquiredAt: timestamp("acquired_at", { withTimezone: true }),
+    method: text("method", { enum: acquisitionMethods }).notNull().default("unknown"),
+    acquiredAt: integer("acquired_at", { mode: "timestamp_ms" }),
     provenanceNote: text("provenance_note"),
     privateNote: text("private_note"),
     ...timestamps,
@@ -69,10 +68,10 @@ export const acquisitions = pgTable(
   (table) => [uniqueIndex("acquisitions_public_id_uq").on(table.publicId)],
 );
 
-export const collections = pgTable(
+export const collections = sqliteTable(
   "collections",
   {
-    id: uuid("id").primaryKey().default(sql`uuidv7()`),
+    id: id("id"),
     code: text("code").notNull(),
     name: text("name").notNull(),
     description: text("description"),
@@ -81,58 +80,61 @@ export const collections = pgTable(
   (table) => [uniqueIndex("collections_code_uq").on(table.code)],
 );
 
-export const collectionObjects = pgTable(
+export const collectionObjects = sqliteTable(
   "collection_objects",
   {
-    id: uuid("id").primaryKey().default(sql`uuidv7()`),
+    id: id("id"),
     publicId: text("public_id").notNull(),
-    referenceId: uuid("reference_id").references(() => catalogReferences.id, {
+    referenceId: text("reference_id").references(() => catalogReferences.id, {
       onDelete: "set null",
     }),
-    acquisitionId: uuid("acquisition_id").references(() => acquisitions.id, {
+    acquisitionId: text("acquisition_id").references(() => acquisitions.id, {
       onDelete: "set null",
     }),
-    openingState: openingStateEnum("opening_state").notNull().default("unknown"),
-    completeness: completenessEnum("completeness").notNull().default("unknown"),
-    condition: conditionEnum("condition").notNull().default("unknown"),
+    openingState: text("opening_state", { enum: openingStates }).notNull().default("unknown"),
+    completeness: text("completeness", { enum: completenessStates }).notNull().default("unknown"),
+    condition: text("condition", { enum: conditionStates }).notNull().default("unknown"),
     provenanceSummary: text("provenance_summary"),
     storageLocation: text("storage_location"),
     privateNote: text("private_note"),
     ...timestamps,
   },
-  (table) => [uniqueIndex("collection_objects_public_id_uq").on(table.publicId)],
+  (table) => [
+    uniqueIndex("collection_objects_public_id_uq").on(table.publicId),
+    uniqueIndex("collection_objects_reference_public_uq").on(table.referenceId, table.publicId),
+  ],
 );
 
-export const objectCollections = pgTable(
+export const objectCollections = sqliteTable(
   "object_collections",
   {
-    objectId: uuid("object_id")
+    objectId: text("object_id")
       .notNull()
       .references(() => collectionObjects.id, { onDelete: "cascade" }),
-    collectionId: uuid("collection_id")
+    collectionId: text("collection_id")
       .notNull()
       .references(() => collections.id, { onDelete: "cascade" }),
   },
   (table) => [primaryKey({ columns: [table.objectId, table.collectionId] })],
 );
 
-export const sources = pgTable("sources", {
-  id: uuid("id").primaryKey().default(sql`uuidv7()`),
-  kind: sourceKindEnum("kind").notNull(),
+export const sources = sqliteTable("sources", {
+  id: id("id"),
+  kind: text("kind", { enum: sourceKinds }).notNull(),
   title: text("title").notNull(),
   citation: text("citation"),
   url: text("url"),
-  accessedAt: timestamp("accessed_at", { withTimezone: true }),
+  accessedAt: integer("accessed_at", { mode: "timestamp_ms" }),
   ...timestamps,
 });
 
-export const referenceSources = pgTable(
+export const referenceSources = sqliteTable(
   "reference_sources",
   {
-    referenceId: uuid("reference_id")
+    referenceId: text("reference_id")
       .notNull()
       .references(() => catalogReferences.id, { onDelete: "cascade" }),
-    sourceId: uuid("source_id")
+    sourceId: text("source_id")
       .notNull()
       .references(() => sources.id, { onDelete: "cascade" }),
     note: text("note"),

@@ -10,17 +10,19 @@
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
+    "db:migrate:local": "wrangler d1 migrations apply lacasadelnaipe --local --config ../../apps/web/wrangler.jsonc",
+    "db:migrate:remote": "wrangler d1 migrations apply lacasadelnaipe --remote --config ../../apps/web/wrangler.jsonc",
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@lacasadelnaipe/catalog": "workspace:*",
-    "@neondatabase/serverless": "1.1.0",
     "drizzle-orm": "0.45.2"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "5.20260920.1",
     "@types/node": "24.13.6",
     "dotenv": "17.4.2",
-    "drizzle-kit": "0.31.10"
+    "drizzle-kit": "0.31.10",
+    "wrangler": "4.129.1"
   }
 }

@@ -18,7 +18,12 @@ Build La Casa del Naipe as a durable cultural catalog first and a commercial pro
 
 - Keep domain logic in `packages/catalog` and persistence in `packages/db`.
 - Keep `apps/web` thin; UI code must not become the source of catalog rules.
-- Prefer server components and server-side data access by default.
+- Cloudflare Free Tier is an architectural constraint until an ADR explicitly changes it.
+- Prefer static assets for public reads. Do not SSR a page just because the framework can.
+- Dynamic Worker invocations are for search, administration, uploads and genuinely dynamic data.
+- D1 queries must be bounded and indexed; avoid full-table scans on request paths.
+- Binary media belongs in R2; D1 stores metadata and object keys only.
+- No external database, always-on server, container runtime or paid SaaS may become a production dependency without an ADR.
 - No new runtime dependency without a concrete need.
 - Schema changes require a migration and, when semantically significant, an ADR.
 - Tests should cover domain invariants, not implementation trivia.

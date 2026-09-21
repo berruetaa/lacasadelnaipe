@@ -5,47 +5,48 @@
 
 ## Contexto
 
-LCDN necesita empezar con dos mazos y poder crecer a miles de referencias, objetos, fuentes y colecciones sin confundir el catálogo intelectual con el inventario físico.
+LCDN necesita empezar con dos mazos y poder crecer a miles de referencias, objetos, fuentes y colecciones sin confundir el catálogo intelectual con el inventario físico. El presupuesto inicial de infraestructura debe ser esencialmente cero.
 
-Además, la plataforma debe ser **serverless-first**: sin servidores de aplicación persistentes, sin pools TCP mantenidos y sin infraestructura que LCDN tenga que operar 24/7.
+Cloudflare Workers Free limita las invocaciones dinámicas y el tiempo de CPU, mientras que los Static Assets pueden servirse sin consumir esas invocaciones. D1 y R2 ofrecen cuotas gratuitas suficientes para la etapa fundacional.
 
 ## Decisión
 
 Se adopta un monorepo TypeScript con tres límites claros:
 
 1. `packages/catalog`: lenguaje y reglas del dominio, sin infraestructura.
-2. `packages/db`: persistencia relacional mediante Drizzle sobre Neon Serverless Postgres.
-3. `apps/web`: presentación pública y, en el futuro, administración mediante Next.js en runtime serverless.
+2. `packages/db`: persistencia SQLite compatible con Cloudflare D1 mediante Drizzle.
+3. `apps/web`: presentación pública y futura administración, desplegada en Cloudflare Workers.
 
-Neon Serverless Postgres será la fuente de verdad transaccional. El acceso de runtime se realiza mediante el driver HTTP de Neon; no se mantiene un pool PostgreSQL TCP persistente.
+La aplicación usa la superficie de Next.js 16 mediante vinext/Vite, actualmente la ruta recomendada por Cloudflare para aplicaciones Next.js nuevas en Workers.
 
-Las imágenes se tratarán como assets referenciados en almacenamiento de objetos serverless y no como blobs de la base principal.
+### Restricción arquitectónica: Cloudflare Free Tier first
 
-Los IDs internos usan UUID y los IDs públicos LCDN son identificadores humanos permanentes e independientes de la clave de base de datos.
+Mientras LCDN esté en etapa fundacional:
 
-## Restricciones arquitectónicas
+- no se introduce infraestructura que requiera procesos persistentes;
+- no se depende de PostgreSQL/MySQL externos;
+- D1 es la fuente de verdad transaccional;
+- R2 almacena imágenes originales y derivados, no la base de datos;
+- el sitio público es static-first;
+- SSR y acceso a D1 se usan sólo cuando aportan valor real;
+- las consultas deben usar índices y límites explícitos para evitar escaneos que consuman cuota de filas de D1;
+- una dependencia que obligue a abandonar el plan gratuito necesita una decisión explícita y otro ADR.
 
-- producción no depende de Docker;
-- no hay servidor Node persistente propio;
-- no hay PostgreSQL autogestionado;
-- las funciones deben asumir ejecución efímera y stateless;
-- los objetos binarios no se guardan en PostgreSQL;
-- ningún paquete de dominio puede depender de un proveedor cloud.
+Los IDs internos son UUID generados por la aplicación y los IDs públicos LCDN son identificadores humanos permanentes e independientes de la clave de base de datos.
 
 ## Consecuencias
 
-- escala a cero cuando no hay tráfico;
-- no hay conexiones persistentes que administrar;
-- la UI puede reemplazarse sin redefinir el catálogo;
-- una referencia puede existir sin ejemplares físicos;
-- un objeto puede cambiar de ubicación o colección sin cambiar de identidad;
-- la procedencia puede modelarse históricamente sin sobrescribir hechos anteriores;
-- el proveedor de base puede reemplazarse manteniendo PostgreSQL y el límite `packages/db`.
+- Las visitas a contenido estático pueden servirse sin consumir invocaciones de Worker.
+- D1 y R2 escalan a cero y no requieren servidores propios.
+- La UI puede reemplazarse sin redefinir el catálogo.
+- Una referencia puede existir sin ejemplares físicos.
+- Un objeto puede cambiar de ubicación o colección sin cambiar de identidad.
+- La procedencia puede modelarse históricamente sin sobrescribir hechos anteriores.
+- Si las cuotas gratuitas dejan de ser suficientes, se mide primero qué recurso se agotó antes de cambiar de arquitectura.
 
 ## No decidido todavía
 
-- proveedor final de despliegue de Next.js;
-- almacenamiento serverless de imágenes;
 - autenticación y roles;
-- motor de búsqueda dedicado;
+- estrategia definitiva de generación/publicación de fichas estáticas;
+- búsqueda de texto completo cuando el catálogo crezca;
 - licencia del código y de los datos.
