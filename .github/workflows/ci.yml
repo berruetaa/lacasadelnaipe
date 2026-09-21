@@ -6,7 +6,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -56,11 +56,12 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Preserve generated lockfile during bootstrap
-        if: ${{ success() && steps.lockfile.outputs.present == 'false' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: pnpm-lock-bootstrap
-          path: pnpm-lock.yaml
-          if-no-files-found: error
-          retention-days: 1
+      - name: Commit bootstrap lockfile
+        if: ${{ success() && steps.lockfile.outputs.present == 'false' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pnpm-lock.yaml
+          git commit -m "chore: pin pnpm dependency graph"
+          git push
