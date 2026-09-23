@@ -4,6 +4,8 @@
 
 Build La Casa del Naipe as a durable cultural catalog first and a commercial product second.
 
+For the current autonomous scale-up and research mandate, read and execute **`docs/agent-master-mission.md`** in full. It is an implementation brief, not a planning prompt: the agent is expected to modify the repository, build the workflow, perform the research, validate and deduplicate the corpus, and continue until the mission's completion criteria are met.
+
 ## Non-negotiable domain rules
 
 1. Catalog references and physical objects are different entities.
