@@ -3,6 +3,7 @@ import { z } from "zod";
 const serialPrefixes = {
   reference: "REF",
   object: "OBJ",
+  acquisition: "ACQ",
   document: "DOC",
   library: "LIB",
   accessory: "ACC",
@@ -12,7 +13,7 @@ export type SerialEntity = keyof typeof serialPrefixes;
 
 export const catalogIdSchema = z
   .string()
-  .regex(/^LCDN-(REF|OBJ|DOC|LIB|ACC)-\d{6}$/, "Invalid LCDN identifier");
+  .regex(/^LCDN-(REF|OBJ|ACQ|DOC|LIB|ACC)-\d{6}$/, "Invalid LCDN identifier");
 
 export type CatalogId = z.infer<typeof catalogIdSchema>;
 

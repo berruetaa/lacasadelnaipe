@@ -24,6 +24,7 @@ Series iniciales:
 
 - `LCDN-REF-000001` — referencia catalográfica
 - `LCDN-OBJ-000001` — objeto físico
+- `LCDN-ACQ-000001` — adquisición
 - `LCDN-DOC-000001` — documento/archivo
 - `LCDN-LIB-000001` — biblioteca
 - `LCDN-ACC-000001` — accesorio
@@ -33,6 +34,8 @@ Colecciones históricas usan códigos explícitos, por ejemplo `LCDN-COL-MSA`, s
 ## Certeza
 
 Toda atribución puede marcarse como `confirmed`, `highly_probable`, `probable`, `possible` o `unknown`.
+
+La certeza se asigna a cada afirmación, con su estado, fuente y localizador. Una referencia no tiene una certeza global que aplaste diferencias entre atributos.
 
 La ausencia de información nunca se rellena con una estimación presentada como hecho.
 
@@ -49,3 +52,9 @@ La procedencia es historia, no un campo de propietario actual. Debe conservar la
 ## Privacidad
 
 El catálogo público puede mostrar procedencia histórica cuando sea apropiado, pero nunca ubicación de depósito, datos personales sensibles, precio privado ni notas de seguridad.
+
+## Investigación catalográfica
+
+Los registros de descubrimiento son candidatos con identidad interna y conservan el ID de su catálogo de origen. La aceptación crea una referencia LCDN y su ID permanente; una copia física puede apuntar a esa referencia o quedar sin asignar mientras se investiga.
+
+Fuentes, cobertura, lotes, candidatos, decisiones, afirmaciones, entidades normalizadas y medios con derechos se documentan por separado. El detalle del flujo está en [`catalog-pipeline.md`](catalog-pipeline.md), y el modelo implementado en el esquema Zod y D1 está descrito en [ADR 0002](adr/0002-auditable-catalog-research.md).

@@ -33,5 +33,8 @@ jobs:
       - name: Unit tests
         run: pnpm test
 
+      - name: Research corpus validation
+        run: pnpm catalog:validate
+
       - name: Build
         run: pnpm build

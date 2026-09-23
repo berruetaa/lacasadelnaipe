@@ -9,10 +9,14 @@
     "includes": [
       "**",
       "!!**/.next",
+      "!!**/.wrangler",
       "!!**/node_modules",
       "!!**/coverage",
       "!!**/playwright-report",
-      "!!**/test-results"
+      "!!**/test-results",
+      "!!data/catalog/public-index.json",
+      "!!data/catalog/redirect-index.json",
+      "!!data/research/batches/*/batch.json"
     ]
   },
   "formatter": {

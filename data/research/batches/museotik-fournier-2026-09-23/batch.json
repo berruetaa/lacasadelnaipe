@@ -1,0 +1,12 @@
+{
+  "id": "batch:museotik-fournier-2026-09-23",
+  "slug": "museotik-fournier-2026-09-23",
+  "title": "Barrido del catálogo de naipes del Museo Fournier",
+  "scope": "Registros MUSEOTIK del Museo Fournier de Naipes de Álava cuyo tipo de objeto es Baraja; 1650 resultados recuperados en 4 páginas. Cada fila es un registro de museo y todavía no equivale automáticamente a una referencia LCDN distinta.",
+  "status": "review",
+  "sourceIds": ["src:museotik-fournier-catalog"],
+  "startedAt": "2026-09-23T20:16:03.494Z",
+  "finishedAt": "2026-09-23T21:06:42.844Z",
+  "method": "POST al endpoint público https://museotik.euskadi.eus/ad83aMuseotikPublicaWar/explora/buscarColeccion con idioma=es, idMuseo=2, idObjeto=4427, elementosPagina=500 y numPagina=1..4. Cada coid se conserva como candidato con su número de inventario y título originales.",
+  "operator": "LCDN autonomous research run"
+}

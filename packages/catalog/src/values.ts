@@ -61,6 +61,10 @@ export const acquisitionMethods = [
 
 export const sourceKinds = [
   "physical_object",
+  "museum_collection",
+  "national_library_catalog",
+  "specialist_database",
+  "catalog_record",
   "manufacturer_catalog",
   "book",
   "periodical",
@@ -77,3 +81,50 @@ export const sourceKinds = [
   "institutional_website",
   "other",
 ] as const;
+
+export const sourceQualityLevels = ["A", "B", "C", "D"] as const;
+
+export const referenceStatuses = ["active", "merged", "withdrawn"] as const;
+
+export const researchCandidateStates = [
+  "candidate",
+  "researching",
+  "review",
+  "needs_more_evidence",
+  "accepted",
+  "merged",
+  "rejected",
+  "withdrawn",
+] as const;
+
+export const researchBatchStates = ["open", "review", "accepted", "closed"] as const;
+
+export const claimStatuses = ["proposed", "accepted", "rejected", "superseded"] as const;
+
+export const catalogEntityKinds = [
+  "manufacturer",
+  "printer",
+  "publisher",
+  "brand",
+  "organization",
+  "person",
+  "place",
+  "pattern",
+  "collection",
+  "classification",
+] as const;
+
+export const catalogEntityRoles = [
+  "manufacturer",
+  "printer",
+  "publisher",
+  "brand",
+  "designer",
+  "distributor",
+  "sponsor",
+  "subject",
+  "place_of_production",
+  "classification",
+] as const;
+
+export const mergeTargets = ["reference", "candidate"] as const;

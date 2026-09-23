@@ -1,0 +1,1675 @@
+[
+  {
+    "publicId": "LCDN-REF-000001",
+    "slug": "baraja-espanola-c-1570-espana-00003",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "c. 1570",
+    "dateStart": null,
+    "dateEnd": null,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 95,
+    "cardHeightMm": 55,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00003",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64679/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier clasifica el registro como Baraja española, muestra la designación España 00003 y describe oros, copas, espadas y bastos. La ficha indica c. 1570; se conserva como fecha aproximada. El ejemplar descrito es fragmentario, condición que no se extrapola al diseño de referencia.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Título",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "c. 1570",
+        "certainty": "probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Fecha",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00003"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Otras denominaciones",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 95,
+          "heightMm": 55
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Dimensiones",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Materias",
+        "note": "Ficha museotik-ca-64679"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44506; Reverso",
+        "note": "Ficha museotik-ca-64679"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64679/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44506; MUSEOTIK museotik-ca-64679"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000002",
+    "slug": "baraja-espanola-c-1610-espana-00008",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "c. 1610",
+    "dateStart": null,
+    "dateEnd": null,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 87,
+    "cardHeightMm": 49,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00008",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64699/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier registra Baraja española, la designación España 00008 y marcas O, C, E y B, con inscripciones para Toledo. La datación publicada es aproximada (c. 1610).",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Título",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "c. 1610",
+        "certainty": "probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Fecha",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00008"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Otras denominaciones",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 87,
+          "heightMm": 49
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Dimensiones",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Materias",
+        "note": "Ficha museotik-ca-64699"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44526; Reverso",
+        "note": "Ficha museotik-ca-64699"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64699/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44526; MUSEOTIK museotik-ca-64699"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000003",
+    "slug": "baraja-espanola-1638-1640-espana-00015",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "1638 - 1640",
+    "dateStart": 1638,
+    "dateEnd": 1640,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 75,
+    "cardHeightMm": 40,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00015",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_62472/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 00015, describe marcas de oros, copas, espadas y bastos y fecha el diseño entre 1638 y 1640. La misma ficha lo distingue de España 00016 como modelo de Sevilla.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Título",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1638 - 1640",
+        "certainty": "highly_probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Fecha",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00015"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Otras denominaciones",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 75,
+          "heightMm": 40
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Dimensiones",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Materias",
+        "note": "Ficha museotik-ca-62472"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 42411; Reverso",
+        "note": "Ficha museotik-ca-62472"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_62472/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 42411; MUSEOTIK museotik-ca-62472"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000004",
+    "slug": "baraja-espanola-1647-espana-00016",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": "Sevilla",
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "1647",
+    "dateStart": 1647,
+    "dateEnd": 1647,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 74,
+    "cardHeightMm": 40,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00016",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64682/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 00016, inscripciones de oros, copas, espadas y bastos, fecha 1647 y producción en Sevilla. El registro diferencia expresamente su modelo del España 00015.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Título",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1647",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Fecha",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00016"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Otras denominaciones",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 74,
+          "heightMm": 40
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Dimensiones",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Materias",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Reverso",
+        "note": "Ficha museotik-ca-64682"
+      },
+      {
+        "attribute": "originRegion",
+        "value": "Sevilla",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44509; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-64682"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64682/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44509; MUSEOTIK museotik-ca-64682"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000005",
+    "slug": "baraja-espanola-1670-espana-00011",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "1670",
+    "dateStart": 1670,
+    "dateEnd": 1670,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 90,
+    "cardHeightMm": 60,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00011",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63409/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 00011, fecha 1670 y describe espadas, oros y bastos dentro de una baraja de palos españoles.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Título",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1670",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Fecha",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00011"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Otras denominaciones",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 90,
+          "heightMm": 60
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Dimensiones",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Materias",
+        "note": "Ficha museotik-ca-63409"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43337; Reverso",
+        "note": "Ficha museotik-ca-63409"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63409/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 43337; MUSEOTIK museotik-ca-63409"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000006",
+    "slug": "baraja-espanola-1709-espana-06016",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": "Madrid",
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "1709",
+    "dateStart": 1709,
+    "dateEnd": 1709,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 86,
+    "cardHeightMm": 48,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 06016",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63376/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 06016, fecha 1709, producción de la Fábrica de Madrid y representa oros, espadas y bastos con sus nombres en las cartas.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Título",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1709",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Fecha",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 06016"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Otras denominaciones",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 86,
+          "heightMm": 48
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Dimensiones",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Materias",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Reverso",
+        "note": "Ficha museotik-ca-63376"
+      },
+      {
+        "attribute": "originRegion",
+        "value": "Madrid",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43307; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-63376"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63376/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 43307; MUSEOTIK museotik-ca-63376"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000007",
+    "slug": "baraja-espanola-1711-espana-00018",
+    "title": "Baraja española",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "1711",
+    "dateStart": 1711,
+    "dateEnd": 1711,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 94,
+    "cardHeightMm": 50,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00018",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64533/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 00018, fecha 1711 e inscripciones de oros, copas y espadas; el sistema se deja en certeza probable porque la descripción textual disponible no enumera los cuatro palos completos.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Título",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "highly_probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1711",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Fecha",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00018"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Otras denominaciones",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 94,
+          "heightMm": 50
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Dimensiones",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Materias",
+        "note": "Ficha museotik-ca-64533"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44367; Reverso",
+        "note": "Ficha museotik-ca-64533"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64533/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44367; MUSEOTIK museotik-ca-64533"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000008",
+    "slug": "baraja-espanola-c-1775-espana-06013",
+    "title": "Baraja española del siglo XVIII",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": "Fábrica Real de Su Majestad",
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": "Zaragoza",
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "c. 1775",
+    "dateStart": null,
+    "dateEnd": null,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 87,
+    "cardHeightMm": 55,
+    "material": "Papel",
+    "backDesign": "En blanco",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 06013",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63377/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 06013, atribuye la inscripción de producción a la Fábrica Real de Su Majestad y dice que fue fabricada en Zaragoza. Mantiene la datación aproximada c. 1775.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja española del siglo XVIII",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Título",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "highly_probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "c. 1775",
+        "certainty": "probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Fecha",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 06013"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Otras denominaciones",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 87,
+          "heightMm": 55
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Dimensiones",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Materias",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "En blanco",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Reverso",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "manufacturer",
+        "value": "Fábrica Real de Su Majestad",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-63377"
+      },
+      {
+        "attribute": "originRegion",
+        "value": "Zaragoza",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 43308; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-63377"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_63377/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 43308; MUSEOTIK museotik-ca-63377"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000009",
+    "slug": "baraja-constitucional-1822-espana-00147",
+    "title": "Baraja Constitucional",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "spanish",
+    "pattern": "Constitucional",
+    "regionalVariant": null,
+    "dateLabel": "1822",
+    "dateStart": 1822,
+    "dateEnd": 1822,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 86,
+    "cardHeightMm": 53,
+    "material": "Papel",
+    "backDesign": "Bandera de España, con la inscripción CONSTITUCIÓN en la banda amarilla",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00147",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64687/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica España 00147, fecha 1822 y explica cómo sus palos alegóricos sustituyen oros, copas, espadas y bastos por símbolos constitucionales. Se conserva como variante temática del sistema español.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja Constitucional",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Título",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "1822",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Fecha",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00147"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Otras denominaciones",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 86,
+          "heightMm": 53
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Dimensiones",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Materias",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "Bandera de España, con la inscripción CONSTITUCIÓN en la banda amarilla",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Reverso",
+        "note": "Ficha museotik-ca-64687"
+      },
+      {
+        "attribute": "pattern",
+        "value": "Constitucional",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44514; Título / diseño del anverso",
+        "note": "Ficha museotik-ca-64687"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64687/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44514; MUSEOTIK museotik-ca-64687"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000010",
+    "slug": "baraja-catalana-c-1870-espana-00345",
+    "title": "Baraja catalana",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": null,
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": null,
+    "suitSystem": "unknown",
+    "pattern": null,
+    "regionalVariant": "Catalana",
+    "dateLabel": "c. 1870",
+    "dateStart": null,
+    "dateEnd": null,
+    "editionCode": null,
+    "cardCount": null,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 87,
+    "cardHeightMm": 55,
+    "material": "Papel",
+    "backDesign": "Azul",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00345",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64186/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier cataloga una Baraja catalana, con designación España 00345, fecha aproximada c. 1870 y reverso azul. La ficha abierta no describe el anverso; el sistema de palos queda expresamente desconocido.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja catalana",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Título",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "unknown",
+        "certainty": "unknown",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Anverso no descrito en la ficha abierta",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "c. 1870",
+        "certainty": "probable",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Fecha",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00345"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Otras denominaciones",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 87,
+          "heightMm": 55
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Dimensiones",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Materias",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "Azul",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Reverso",
+        "note": "Ficha museotik-ca-64186"
+      },
+      {
+        "attribute": "regionalVariant",
+        "value": "Catalana",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 44088; Título",
+        "note": "Ficha museotik-ca-64186"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_64186/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 44088; MUSEOTIK museotik-ca-64186"
+      }
+    ]
+  },
+  {
+    "publicId": "LCDN-REF-000011",
+    "slug": "baraja-nacional-1970-heraclio-fournier-25",
+    "title": "Baraja Nacional",
+    "aliases": [],
+    "status": "active",
+    "mergedIntoPublicId": null,
+    "manufacturer": "Heraclio Fournier",
+    "printer": null,
+    "publisher": null,
+    "brand": null,
+    "originCountry": "ES",
+    "originRegion": "Vitoria-Gasteiz",
+    "suitSystem": "spanish",
+    "pattern": null,
+    "regionalVariant": null,
+    "dateLabel": "25/06/1970",
+    "dateStart": 1970,
+    "dateEnd": 1970,
+    "editionCode": "Nº 25",
+    "cardCount": 50,
+    "cardsPerSuit": null,
+    "additionalCards": [],
+    "indices": [],
+    "cardWidthMm": 95,
+    "cardHeightMm": 61,
+    "material": "Papel",
+    "backDesign": "Motivos vegetales y geométricos en verde y negro",
+    "theme": null,
+    "language": [],
+    "catalogCodes": [
+      {
+        "authority": "Museo Fournier de Naipes de Álava / MUSEOTIK (otras denominaciones)",
+        "code": "España 00800 A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_342729/es_def/index.shtml"
+      }
+    ],
+    "evidenceSourceIds": [
+      "src:museotik-fournier-catalog"
+    ],
+    "notes": "La ficha individual del Museo Fournier identifica al fabricante, la fecha, la designación España 00800 A, el número de producto 25 y las 50 cartas; el anverso lleva índices O/E y la ficha describe su reverso. Un segundo registro Fournier del mismo año y producto, pero con reverso beige y sin sufijo A, permanece en revisión como posible variante.",
+    "createdAt": "2026-09-23T20:16:03.494Z",
+    "updatedAt": "2026-09-23T21:06:42.844Z",
+    "claims": [
+      {
+        "attribute": "title",
+        "value": "Baraja Nacional",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Título",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "suitSystem",
+        "value": "spanish",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Anverso y otras denominaciones",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "originCountry",
+        "value": "ES",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Otras denominaciones / ficha del objeto",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "dateLabel",
+        "value": "25/06/1970",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Fecha",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "catalogCodes",
+        "value": {
+          "authority": "Museo Fournier / MUSEOTIK",
+          "code": "España 00800 A"
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Otras denominaciones",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "dimensions",
+        "value": {
+          "widthMm": 95,
+          "heightMm": 61
+        },
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Dimensiones",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "material",
+        "value": "Papel",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Materias",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "backDesign",
+        "value": "Motivos vegetales y geométricos en verde y negro",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Reverso",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "manufacturer",
+        "value": "Heraclio Fournier",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "originRegion",
+        "value": "Vitoria-Gasteiz",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Autoría / inscripciones del anverso",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "editionCode",
+        "value": "Nº 25",
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Inscripciones del anverso",
+        "note": "Ficha museotik-ca-342729"
+      },
+      {
+        "attribute": "cardCount",
+        "value": 50,
+        "certainty": "confirmed",
+        "sourceIds": [
+          "src:museotik-fournier-catalog"
+        ],
+        "locator": "Inventario 52040; Inscripciones de la baraja",
+        "note": "Ficha museotik-ca-342729"
+      }
+    ],
+    "sources": [
+      {
+        "id": "src:museotik-fournier-catalog",
+        "title": "Catálogo MUSEOTIK: Museo Fournier de Naipes de Álava",
+        "organization": "Museotik — Departamento de Cultura y Política Lingüística del Gobierno Vasco; Museo Fournier de Naipes de Álava",
+        "quality": "A",
+        "url": "https://museotik.euskadi.eus/contenidos/cultural_asset/museotik_ca_342729/es_def/index.shtml",
+        "accessedAt": "2026-09-23",
+        "locator": "Registro 52040; MUSEOTIK museotik-ca-342729"
+      }
+    ]
+  }
+]

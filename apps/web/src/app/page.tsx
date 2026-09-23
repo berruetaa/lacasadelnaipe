@@ -63,7 +63,9 @@ export default function HomePage() {
 
       <footer className="flex flex-col gap-2 py-7 text-sm text-[var(--muted)] sm:flex-row sm:justify-between">
         <p>La Casa del Naipe</p>
-        <p>El catálogo público abrirá cuando existan las primeras fichas verificadas.</p>
+        <a className="underline decoration-[var(--line)] underline-offset-4" href="/catalogo">
+          Explorar el catálogo verificado
+        </a>
       </footer>
     </main>
   );

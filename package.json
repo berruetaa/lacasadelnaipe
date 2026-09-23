@@ -16,6 +16,8 @@
     "typecheck": "pnpm -r --if-present run typecheck",
     "test": "pnpm -r --if-present run test",
     "test:e2e": "playwright test",
+    "catalog:validate": "pnpm --filter @lacasadelnaipe/catalog catalog:validate",
+    "catalog:import": "node scripts/catalog/import-d1.mjs",
     "cf:typegen": "pnpm --filter @lacasadelnaipe/web cf:typegen",
     "db:generate": "pnpm --filter @lacasadelnaipe/db db:generate",
     "db:migrate:local": "pnpm --filter @lacasadelnaipe/db db:migrate:local",
